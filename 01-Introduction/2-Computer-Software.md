@@ -65,3 +65,5 @@ Since the process of compilation happens on a specific machine with specific set
 - Only about 100 instructions that the computer understands - Different programs will just use these instructions in different orders and combinations and build on top of each other.
 
 - The most valuable part of learning to program is learning how to think about arranging the sequence of instructions to solve the problem or carry out the task
+
+> Homework: Research what is a fundamental difference between languages like C++, Java, C and Python, JavaScript.
