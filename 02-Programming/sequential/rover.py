@@ -1,0 +1,17 @@
+# Working with simple sequential statements
+import time
+print("Loading rover onto the rocket")
+time.sleep(2)
+print("Loaded the rover onto the rocket")
+time.sleep(5)
+print("Approaching to Mars")
+time.sleep(1)
+print("Detaching the rover")
+time.sleep(0.5)
+print("Opening parachutes")
+time.sleep(0.1)
+print("Opened parachutes")
+time.sleep(1)
+a = input("Enter the message to send to Earth: ")
+time.sleep(2)
+print("Message is sent to Earth %s" % a)
