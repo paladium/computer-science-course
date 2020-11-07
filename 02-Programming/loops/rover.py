@@ -13,11 +13,26 @@
 # Is there water at position 3? -> no
 # The total points is: 3
 
-##Additional, we extend it to two dimensional. x, x and y
-# Instead of moving, left and right, x+1, x -1, y - 1, y + 1
-# Initial position - 4, 4
-# Is there water at position (5, 4) -> yes
-# Is there water at position (6, 4) -> no
-# (3, 4) -> no
-# (4, 5) -> no
-# (4, 3) -> no
+cur_pos = int(input("Enter your current position : "))
+initial = cur_pos
+flag = True
+water_num = 0
+while flag:
+  if -100 <= cur_pos <= 100:
+    water_check = input("Is there water at position {} ? ".format(initial))
+    if water_check == "yes":
+      if initial >= cur_pos:
+        initial += 1
+      elif initial < cur_pos:
+        initial -=1
+      water_num += 1
+    elif water_check == "no":
+      if initial >= cur_pos:
+        initial = cur_pos - 1
+      elif initial < cur_pos:
+        flag = False
+  else:
+    print("Invalid position !")
+    break
+print("{} places with water were found .".format(water_num))
+  
