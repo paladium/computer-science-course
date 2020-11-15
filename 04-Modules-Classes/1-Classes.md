@@ -41,7 +41,7 @@ class Aircraft:
     def __init__(self, name, speed):
         self.name = name
         self.speed = speed
-    def calculateTime(distance):
+    def calculateTime(self, distance):
         return distance / self.speed
 plane = Aircraft("Boeing 747", 500)
 print("It will take {} hours to fly {} km".format(plane.calculateTime(5000), 5000))
