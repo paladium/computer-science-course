@@ -52,3 +52,9 @@ The **self** parameter is a reference to the current instance of the class, and 
 ```python
 plane.speed += 100
 ```
+
+> Homework: write a python class named Converter, which will have 3 functions: convert from miles to km, from km to miles and from feet to meters. Ask user what operation that want to do: miles_to_km, km_to_miles or feet_to_meters, input all values and then run your class's functions to print the result.
+
+> Homework: create a class named Song, which will accept a list of lyrics. The class should also have a function named print_lyrics, which will print the lyrics list one by one.
+
+> Homework: create a python class named Student, which has name and major variables. Make a new function greet which will print the current student's name and major. Make another function named get_schedule, which will return the schedule for the student based on the major (e.g computer science, then Monday, Tuesday, Wednesday, Thursday, Friday 10-6pm).
