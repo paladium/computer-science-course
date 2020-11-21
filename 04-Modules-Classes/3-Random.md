@@ -40,3 +40,5 @@ print(random.choice(mylist))
 > Homework: make a game of dice(1-6), where each time user enters "roll" you roll a single dice and you output the result. When the user enters "stop", you stop and calculate total sum.
 
 > Homework: extend a dice game, by allowing user to specify how many dices to play with. For example user enters the number 3, means you need to roll 3 dices and output their results. When the user enters "stop", you stop and calculate total sum of all dices.
+
+> Homework: generate a random password. The length of the password is given from the user. Values you can use: a-z, 0-9.
