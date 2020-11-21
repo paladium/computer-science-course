@@ -97,6 +97,7 @@ Your workout with the goal of "Lose Weight":
 6. Plank—Hold for 30 seconds. Quick tip: Make sure you're keeping your core tight!
 
 ```
+Bonus points: do not ask for goal, but instead infer the goal from the measurements.
 
 ## Homework - Twitter clone. Deadline - 1 week
 Make a simple Twitter clone. Ask which command to execute: Get tweets or Write a tweet. When write a tweet is chosen, ask the user for name and tweet content. Then write the result into the file named tweets, which looks like the following:
