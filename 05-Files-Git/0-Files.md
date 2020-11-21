@@ -74,7 +74,7 @@ else:
     print("File does not exist. Please create one")
 ```
 
-## Homework - workout app
+## Homework - workout app. Deadline - 1 week
 Make an application to create a simple gym schedule, based on his responses. Ask for information like: name, weight, height, age and goals: Lose Weight, Get Ripped, Prepare for Completition. After getting all the data, prepare three files: lose_weight.txt, get_ripped.txt, prepare_for_competition.txt, which contains day by day instructions what to do (you can find some workouts online). After that, write the result to the file named workout.txt:
 ```txt
 Your measurements:
@@ -98,7 +98,7 @@ Your workout with the goal of "Lose Weight":
 
 ```
 
-## Homework - Twitter clone
+## Homework - Twitter clone. Deadline - 1 week
 Make a simple Twitter clone. Ask which command to execute: Get tweets or Write a tweet. When write a tweet is chosen, ask the user for name and tweet content. Then write the result into the file named tweets, which looks like the following:
 ```txt
 Name: John John
