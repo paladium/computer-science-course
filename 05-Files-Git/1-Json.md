@@ -57,6 +57,7 @@ print(data)
 When we want to convert our dictionary to json:
 
 ```python
+import json
 x = {
   "name": "John",
   "age": 30,
