@@ -5,3 +5,9 @@
 4. Register on Github - https://github.com
 
 Read about introduction to Git - https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61.
+
+Workflow:
+- Fork this repository
+- Clone the repository on the local computer
+- Do the homework
+- Push the changes
