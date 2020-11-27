@@ -57,6 +57,7 @@ print(data)
 When we want to convert our dictionary to json:
 
 ```python
+import json
 x = {
   "name": "John",
   "age": 30,
@@ -85,7 +86,7 @@ with open("output.json", "w") as file:
     json.dump(data, file)
 ```
 
-## Homework - ecommerce. Deadline - 1 week
+## Homework - ecommerce. Deadline - 1 week. Create a separate repository.
 Make a simple ecommerce application. It should have the following functions: get all items, add an item, delete item, update item price or available stock. All the items, should be stored in a file, named ecommerce.json. Suppose we have the following file:
 ```json
 [
@@ -155,7 +156,7 @@ If the user enters the number 3, you update the third items price and do not for
 
 Do the same update, but for the available stock field.
 
-## Homework - Make a simple telegram clone. Deadline - 1 week
+## Homework - Make a simple telegram clone. Deadline - 1 week. Create a separate repository.
 You should have two files: accounts.json and messages.json. Accounts.json will store the user accounts: username and password and allow the users to register.
 
 Messages.json will store the messages sent from user to user.
