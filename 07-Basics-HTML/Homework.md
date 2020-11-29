@@ -20,4 +20,5 @@ Submit the assignment as a github repository. Have the main file (home page) nam
 - planets/earth.html
 - planets/mars.html
 ...
+
 Finally, add a simple README.md file to the root of your repository and describe the purpose of the project. Use the folllowing guide to learn more about the markdown: https://www.markdownguide.org/getting-started/
