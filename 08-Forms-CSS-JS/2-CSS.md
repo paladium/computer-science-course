@@ -135,3 +135,21 @@ To select elements with a specific class, write a period (.) character, followed
   color: red;
 }
 ```
+
+## Homework - Shop UI
+Create two pages using the bootstrap framework and its components:
+
+### Home page
+![home](./img/home.png)
+Home page should have the navbar component (https://getbootstrap.com/docs/4.5/components/navbar/) with search and dropdown menu for Items.
+
+In the middle should have a grid of items - cards (https://getbootstrap.com/docs/4.5/components/card/). Each card should contain an item with image, title and description.
+
+### Add Item page
+![add-item](./img/add-item.png)
+Add item page should use the bootstrap form (https://getbootstrap.com/docs/4.5/components/forms/). Use appropriate elements for:
+- Title - Input text with label
+- Description - Textarea with label
+- Category - Select with Label
+- Images - file browser with label
+- Submit button
