@@ -98,3 +98,40 @@ To include the bootstrap in your page (CSS only) use:
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 ```
 
+## CSS selectors
+CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
+### The CSS element Selector
+The element selector selects HTML elements based on the element name.
+
+```css
+p {
+  text-align: center;
+  color: red;
+}
+```
+### The CSS id Selector
+The id selector uses the id attribute of an HTML element to select a specific element.
+
+The id of an element is unique within a page, so the id selector is used to select one unique element!
+
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
+```css
+#para1 {
+  text-align: center;
+  color: red;
+}
+```
+
+### The CSS class Selector
+The class selector selects HTML elements with a specific class attribute.
+
+To select elements with a specific class, write a period (.) character, followed by the class name.
+
+```css
+.center {
+  text-align: center;
+  color: red;
+}
+```
