@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //This is my first program
+
+        /*
+        Hello i am also comments
+
+        And this is a comment
+        */
+        var a = 4;
+        var b = "Hello Earth";
+        alert(a);
+        console.log(b);
+
+        var c = true;
+        b = false;
+        console.log(c == b);
+
+        var d = null;
+        console.log(d);
+
+        var e;
+        var f = "Ilkin";
+        f = "Javid";
+
+        // e = "Javid";
+        console.log(e + 1);
+        console.log(e + "Hello world");
+
+        var age = 16;
+        if (age < 12) {
+            console.log("prohibited");
+            //&& - and sign just like and in python
+            //|| - or sign just like or in python
+            //do not forget the semicolon on each statement
+        } else if (age >= 12 && age <= 21) {
+            console.log("free entrance");
+        } else {
+            console.log("20$");
+        }
+
+        //We need a variable in for loop to keep track of current loop cycle
+        //Next part is when do we need to stop our loop
+        //Finally, what is the step of our loop, ++ - increment by one, += 1, -- decrement by one, -=1
+        for (var counter = 0; counter < 10; counter++) {
+            console.log("Counter is", counter);
+        }
+        for (let counter = 0; counter < 10; counter++) {
+            document.write("<p>Counter is: " + counter + "</p>");
+        }
+        //While loop
+        let test = 0;
+        while (test < 50) {
+            console.log("My value is ", test);
+            test++;
+        }
+
+        let obj = {
+            "javid": 1,
+            "name": "test",
+            "age": 22,
+            "subjects": [{
+                    "name": "CS",
+                    "points": 10
+                },
+                {
+                    "name": "Graphics",
+                    "points": 10
+                }
+            ]
+        };
+        console.log(obj);
+        console.log(JSON.stringify(obj));
+
+        let response = '{"name": "test", "age": 21}';
+        console.log(response);
+        let b2 = JSON.parse(response);
+        console.log(b2);
+
+        function helloWorld(name){
+            alert("Hello " + name);
+        }
+        helloWorld("Javid");
+        let images = ["earth.jpg", "mars.jpg", "saturn.jpg"];
+        console.log(images);
+        console.log(images[2]);
+        images[1] = "jupiter.jpg";
+        console.log(images);
+        console.log(images.length);
+        images.push("mercury.jpg");
+        console.log(images);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
