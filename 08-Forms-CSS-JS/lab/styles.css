@@ -1,0 +1,31 @@
+p {
+    color: red;
+    background: green;
+}
+
+.blue{
+    color: blue;
+    background: white;
+    font-size: 40px;
+    font-family: 'Good Morning';
+}
+
+.pretty-button{
+    width: 200px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    border: 0;
+    font-style: italic;
+    text-decoration: double;
+}
+
+#special-password{
+    height: 50px;
+    font-size: 20px;
+}
+
+.password{
+    background: red;
+}

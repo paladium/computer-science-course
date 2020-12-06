@@ -153,3 +153,5 @@ Add item page should use the bootstrap form (https://getbootstrap.com/docs/4.5/c
 - Category - Select with Label
 - Images - file browser with label
 - Submit button
+
+Also attach two screenshots of the final pages to the repository README file.
