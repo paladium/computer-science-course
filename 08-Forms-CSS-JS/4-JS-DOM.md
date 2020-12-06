@@ -129,3 +129,8 @@ Use the following structure of the "brain" of the bot:
 So when the user enters the message "Hello" or "Hi", you should return the response to the user by also appended the text to the textarea.
 
 Note: you can use the function toLowerCase to convert the user input to lowercase to make sure, you always get some response.
+
+Finally, the chat page, should have a button - logout, which will simply redirect the user to the login page.
+
+## Notes
+Use bootstrap elements to create the application. For now, do not use Jquery library, as I would like you to focus on pure javascript for now.
