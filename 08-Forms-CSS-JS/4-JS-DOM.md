@@ -88,3 +88,44 @@ Or the following example, checks whether the username is available:
     </script>
 </html>
 ```
+
+## Homework - Simple chat
+Create a simple chat using HTML and JavaScript and Bootstrap. The chat will have two pages - login and chat.
+
+## Login page
+Login page will contain the form to enter the username and password of the user. Using javascript only, verify whether the username and password both equal to the value "admin". If they are, you should redirect the user to the chat page (/chat.html, for that you need to use the command window.location.href = "/chat.html" to programatically navigate to another page).
+
+If the credentials are invalid, show an alert to the user.
+
+## Chat page
+The chat page, will contain a single textarea element (readonly) with all the chat between the user and the bot.
+
+Also at the bottom, there should be an input element to send the text and the button to send the message.
+
+Once the button to send the message is clicked, the message is appended to the textarea by adding to its value.
+
+Finally, the bot should have a simple logic to communicate with the user.
+
+Use the following structure of the "brain" of the bot:
+```json
+[
+    {
+        "messages": [
+            "Hello",
+            "Hi",
+            "Good morning"
+        ],
+        "response": "Hello, how are you?"
+    },
+    {
+        "messages": [
+            "How old are you?",
+            "What is your age?"
+        ],
+        "response": "I am just a bot without an age"
+    }
+]
+```
+So when the user enters the message "Hello" or "Hi", you should return the response to the user by also appended the text to the textarea.
+
+Note: you can use the function toLowerCase to convert the user input to lowercase to make sure, you always get some response.
