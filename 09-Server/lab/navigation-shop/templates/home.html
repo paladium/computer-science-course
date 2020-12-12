@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title%}
+Home page
+{% endblock %}
+
+{% block main_content %}
+<div class="card-deck">
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='images/laptop.jpg')}}" class="card-img-top" alt="LAPTOP" height="200">
+        <div class="card-body">
+            <h5 class="card-title">Laptop</h5>
+            <p class="card-text">A laptop computer is a small personal computer. They are designed to be more
+                portable than traditional desktop computers, with many of the same abilities. Laptops are able to be
+                folded flat for transportation and have a built-in keyboard and touchpad.</p>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='images/PC.png')}}" class="card-img-top" alt="PC" height="200">
+        <div class="card-body">
+            <h5 class="card-title">PC</h5>
+            <p class="card-text">A personal computer (PC) is a multi-purpose computer whose size, capabilities, and
+                price make it feasible for individual use. Personal computers are intended to be operated directly
+                by an end user, rather than by a computer expert or technician.</p>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='images/console.jpg')}}" class="card-img-top" alt="CONSOLE" height="200">
+        <div class="card-body">
+            <h5 class="card-title">Console</h5>
+            <p class="card-text">A console is the combination of a monitor and keyboard. It is a rudimentary
+                interface in which the monitor provides the output and the keyboard is used for input. ... Modern
+                consoles often provide a graphical interface that can be used to control machines on a local network
+                (LAN) or provide remote access to remote systems.</p>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='images/tv.jpg')}}" class="card-img-top" alt="TV" height="200">
+        <div class="card-body">
+            <h5 class="card-title">TV</h5>
+            <p class="card-text">Television (TV), sometimes shortened to tele or telly, is a telecommunication
+                medium used for transmitting moving images in monochrome (black and white), or in color, and in two
+                or three dimensions and sound. The term can refer to a television set, a television show, or the
+                medium of television transmission.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
