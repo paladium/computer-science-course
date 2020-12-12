@@ -1,7 +1,6 @@
-# CSS for Flask
+# CSS for Flask framework
 
 If we want to include custom CSS file in our website, we should follow the following structure:
-
 
 ![Folder-css](./img/folder-css.png)
 
