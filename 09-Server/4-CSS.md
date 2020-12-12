@@ -2,6 +2,7 @@
 
 If we want to include custom CSS file in our website, we should follow the following structure:
 
+
 ![Folder-css](./img/folder-css.png)
 
 As you can see, we should make a new folder named static and put inside another folder named css, where we can store as many css files we we want.
