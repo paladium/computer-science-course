@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>{{ title }}</title>
+</head>
+
+<body>
+    {% if username == "Robot": %}
+    <h1>Hello Robot, are you alive?</h1>
+    {% else %}
+    {% if lang == "AZ": %}
+    <h1>Salam {{ username }}</h1>
+    {% elif lang == "USA": %}
+    <h1>Hello {{ username }}</h1>
+    {% else: %}
+    <h1>This language is not available.</h1>
+    {% endif %}
+    {% endif %}
+</body>
+
+</html>

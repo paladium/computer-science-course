@@ -22,7 +22,7 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <a class="navbar-brand" href="#">WeBsHoP</a>
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item active"><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
             <li class="nav-item dropdown">
 
@@ -33,7 +33,15 @@
                     <li><a class="dropdown-item" href="{{ url_for('add_item') }}">Add an item</a></li>
                 </ul>
             </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Language</a>
+                
+            </li>
         </ul>
+
+        <div>
+            Button
+        </div>
 
         <form class="form-inline">
 
@@ -46,9 +54,11 @@
         {% endblock %}
     </h1>
 
-    {% block main_content %}
+    <div class="jumbotron">
+        {% block main_content %}
 
-    {% endblock %}
+        {% endblock %}
+    </div>
 </body>
 
 </html>

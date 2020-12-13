@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Devices</title>
+</head>
+<body>
+    {{ url_for('get_item', name='item') }}
+    {{ url_for('test_route', name='javid', repository='WebShop') }}
+    <ul>
+    {% for device in data: %}
+    <li>
+        <a href="{{ url_for('get_item', name=device['name']) }}">{{ device["name"] }}</a>
+        <ol>
+            <li>{{ device["description"] }}</li> 
+            <li>{{ device["price"] }} $</li>
+            <li>{{ device["stock"] }}</li>
+        </ol>
+    </li>
+    {% endfor %} 
+    </ul> 
+</body>
+</html>

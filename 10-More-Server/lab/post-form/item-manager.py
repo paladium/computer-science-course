@@ -1,0 +1,2 @@
+class ItemManager:
+    pass

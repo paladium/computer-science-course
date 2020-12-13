@@ -1,0 +1,26 @@
+[
+    {
+        "name" : "Console",
+        "description" : "For gamers",
+        "price" : 600.0,
+        "stock" : 5
+    },
+    {
+        "name" : "TV",
+        "description" : "TV for console",
+        "price" : 999.9,
+        "stock" : 190
+    },
+    {
+        "name" : "Controller",
+        "description" : "Controller for your console",
+        "price" : 666.6,
+        "stock" : 1000
+    },
+    {
+        "name" : "Web camera",
+        "description" : "Also for your console",
+        "price" : 100.0,
+        "stock" : 800
+    }
+]

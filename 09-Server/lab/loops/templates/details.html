@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Devices</title>
+</head>
+<body>
+    <ul>
+    {% for device in data: %}
+    <li>{{ device["name"] }}
+        <ol>
+            <li>{{ device["description"] }}</li> 
+            <li>{{ device["price"] }} $</li>
+            <li>{{ device["stock"] }}</li>
+        </ol>
+    </li>
+    {% endfor %} 
+    </ul> 
+</body>
+</html>
