@@ -1,7 +1,7 @@
 # Homework - Extended Online shop
 Your online shop from previous homework should now be extended with more features and Flask web server.
 
-It should have 4 pages:
+It should have 3 pages:
 - Main page with all the items
 - Individual page for each item
 - Add item page
