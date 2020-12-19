@@ -30,9 +30,13 @@ def dashboard():
 def login():
     if request.METHOD == 'POST':
         username = request.form["username"]
-        resp = make_response(redirect(url_for('dashboard')))
-        resp.set_cookie("username", username)
-        return resp
+        password = request.form["password"]
+        if username == "test" and password == "test":
+            resp = make_response(redirect(url_for('dashboard')))
+            resp.set_cookie("username", username)
+            return resp
+        else:
+            return "Access denied"
     else:
         return render_template('login.html')
 
