@@ -28,7 +28,7 @@ def add_item():
 def upload_file():
    if request.method == 'POST':
       f = request.files['image']
-      f.save(secure_filename(f.filename))
+      f.save(f.filename)
       return 'File uploaded successfully'
 		
 if __name__ == '__main__':
@@ -49,6 +49,20 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 #Max 16 mb
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 ```
+
+Next, let's change our upload function slightly:
+
+```python
+@app.route('/uploader', methods = ['POST'])
+def upload_file():
+   if request.method == 'POST':
+      f = request.files['image']
+      filename = secure_filename(f.filename)
+      f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+      return 'File uploaded successfully'
+```
+So first of all, we use the function secure_filename, which will create a unique random string (called UUID) with the correct extension of the file, next we join the filename with the path to our upload folder (do not forget to create it static/uploads). Finally, the file is saved into that path.
+
 Next, we need to add a new route:
 
 ```python
@@ -57,4 +71,4 @@ def display_image(filename):
 	return redirect(url_for('static', filename='uploads/' + filename))
 ```
 
-This function uses redirect function provided by Flask to redirect to a different URL, in this case we want to redirect to full url on the server, where images are stored. Additionally, we add a special response code - 301, means the server should visit that url.
+This function uses redirect function provided by Flask to redirect to a different URL, in this case we want to redirect to full url on the server, where images are stored.
