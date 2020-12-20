@@ -52,6 +52,8 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 
 Next, let's change our upload function slightly:
 
+TODO fix secure_filename new file
+
 ```python
 @app.route('/uploader', methods = ['POST'])
 def upload_file():
