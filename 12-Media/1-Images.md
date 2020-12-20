@@ -5,7 +5,6 @@ Pillow is a Python Imaging Library (PIL), which adds support for opening, manipu
 ## Show an image
 To open and show an image do the following:
 ```python
-
 from PIL import Image
 img = Image.open("img.jpg")
 img.show()
