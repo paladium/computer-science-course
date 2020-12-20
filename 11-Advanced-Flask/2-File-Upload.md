@@ -52,14 +52,24 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 
 Next, let's change our upload function slightly:
 
-TODO fix secure_filename new file
-
 ```python
+from uuid import uuid4
+
+def get_unique_filename(filename):
+    #Split the filename to get the extension
+    split_filename = filename.split('.')
+    #Get the last part as extension
+    extension = split_filename[len(split_filename) - 1]
+    #Get a new uuid 
+    unique_name = uuid4().__str__()
+    return "{}.{}".format(unique_name, extension)
+
 @app.route('/uploader', methods = ['POST'])
 def upload_file():
    if request.method == 'POST':
       f = request.files['image']
       filename = secure_filename(f.filename)
+      filename = get_unique_filename(filename)
       f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
       return 'File uploaded successfully'
 ```
