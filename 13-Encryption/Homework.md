@@ -16,3 +16,5 @@ Take the public key you generated from the previous example and encrypt the foll
 Now decrypt all the messages you encrypted back, show your workings.
 
 Link to wolfram alpha: https://www.wolframalpha.com/input/?i=62%5E17+mod+91
+
+Reading: https://brilliant.org/wiki/rsa-encryption/
