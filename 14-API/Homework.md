@@ -1,6 +1,6 @@
 # SpaceX bot
 Create a SpaceX bot, which will have the following commands:
-- /latest - return 5 latest flights - title and link
+- /latest - return 5 latest flights - title and link, id
 - /launch [id] - return the detailed information about a launch - title, description, total payload and image (attached via Telegram)
 - /crew - return all crew members - name of member, image of crew member and link to wikipedia page
 
