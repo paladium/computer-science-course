@@ -1,0 +1,3 @@
+UPDATE Persons
+SET Salary=10000
+WHERE PersonID=1;
