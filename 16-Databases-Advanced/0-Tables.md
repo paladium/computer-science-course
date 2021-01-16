@@ -1,4 +1,10 @@
-# Tables
+# Tables & Databases
+
+The CREATE DATABASE statement is used to create a new SQL database:
+```sql
+CREATE DATABASE databasename;
+```
+
 The CREATE TABLE statement is used to create a new table in a database.
 
 Syntax:
@@ -22,7 +28,13 @@ CREATE TABLE Persons (
 );
 ```
 
-## Drop tables
+## Drop tables & databases
+
+The DROP DATABASE statement is used to drop an existing SQL database:
+```sql
+DROP DATABASE databasename;
+```
+
 The DROP TABLE statement is used to drop an existing table in a database.
 
 Syntax:
