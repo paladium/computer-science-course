@@ -1,7 +1,9 @@
 import telebot
 import requests
-API_TOKEN = '1577885299:AAF92pueq5O5f6k8UuE-kaXGSE5Rb13lDc8'
-API_KEY='49f18a19-9c5c-40f8-876b-7f06be9213ae'
+import os
+
+API_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+API_KEY=os.environ.get("CRYPTO_TOKEN")
 
 bot = telebot.TeleBot(API_TOKEN)
 
