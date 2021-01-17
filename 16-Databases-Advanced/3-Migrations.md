@@ -14,5 +14,5 @@ CREATE TABLE IF NOT EXISTS Persons (
 To run migrations on first run, we should do the following:
 ```python
 with open('schema.sql') as f:
-    cursor.execute(f.read())
+    cursor.execute(f.read(), multi=True)
 ```
